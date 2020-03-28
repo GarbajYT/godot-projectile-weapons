@@ -10,7 +10,7 @@ func _ready():
 	
 func _physics_process(delta):
 	if shoot:	
-		apply_impulse(transform.basis.z, -transform.basis.z) 
+		apply_impulse(transform.basis.z, -transform.basis.z * SPEED) 
 
 
 func _on_Area_body_entered(body):
